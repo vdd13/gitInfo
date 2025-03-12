@@ -47,12 +47,6 @@
 		</dependency>		
 		
 		<dependency>
-    		<groupId>org.json</groupId>
-		    <artifactId>json</artifactId>
-		    <version>20250107</version>
-		</dependency>
-		
-		<dependency>
 		    <groupId>io.rest-assured</groupId>
 		    <artifactId>rest-assured</artifactId>
 		</dependency>
@@ -61,6 +55,13 @@
 		    <groupId>org.testng</groupId>
 		    <artifactId>testng</artifactId>
 		    <version>7.11.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.mock-server</groupId>
+		    <artifactId>mockserver-netty</artifactId>
+		    <version>5.15.0</version>
+		    <scope>test</scope>
 		</dependency>
 		
 	</dependencies>

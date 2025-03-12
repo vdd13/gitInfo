@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.http.HttpStatus;
 
-import pl.dom.gitInfo.model.RepoDTO;
+import pl.dom.gitInfo.response.ResponseGitInfo;
 import pl.dom.gitInfo.services.GitService;
 
 @RestController
@@ -25,7 +25,7 @@ public class GitController {
 	GitService gitService;
 
 	@GetMapping("allRepos/{user}")
-	public ResponseEntity<List<RepoDTO>> getGitRepos(@PathVariable String user) {
+	public ResponseEntity<List<ResponseGitInfo>> getGitRepos(@PathVariable String user) {
 		return gitService.getReposAndBranches(user);
 	}
 	
